@@ -1,0 +1,21 @@
+.testDiv {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    border: aqua solid 1px;
+    font-size: 20px;
+}
+
+.innerDiv {
+    position: relative;
+    width: 100px;
+    height: 400px;
+    border: red solid 1px;
+}
+
+.outerDiv {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: green solid 1px;
+}

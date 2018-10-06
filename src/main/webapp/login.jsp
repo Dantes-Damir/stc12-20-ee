@@ -11,10 +11,20 @@
     <title>Title</title>
 </head>
 <body>
+<div class="header">
+    <p>
+        Самый лучший в мире сайт
+    </p>
+</div>
 <%
     if ("wrongUser".equals(request.getParameter("action"))) {
 %>
 <div style="color:#AA0000">Неверное имя пользователя/пароль</div>
+<%}%>
+<%
+    if ("noAuth".equals(request.getParameter("action"))) {
+%>
+<div style="color:#AA0000">Попытка получить доступ к закрытой части сайта. Сначала надо войти в систему</div>
 <%}%>
 <form action="/login" method="post">
     Логин:<br>
